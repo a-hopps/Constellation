@@ -1,0 +1,22 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Web Frontend (TypeScript, React, JSON, CSS, Markdown)
+[*.{js,jsx,ts,tsx,json,css,scss,md,yaml,yml}]
+indent_style = space
+indent_size = 2
+
+# Python Backend (PEP 8 standard)
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Docker & Configuration
+[Dockerfile]
+indent_style = space
+indent_size = 2

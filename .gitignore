@@ -1,0 +1,48 @@
+# Operating System
+.DS_Store
+Thumbs.db
+*.swp
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python / FastAPI Backend (/server)
+server/__pycache__/
+server/*/__pycache__/
+server/*/*/__pycache__/
+*.py[cod]
+*$py.class
+server/.venv/
+server/venv/
+server/ENV/
+server/.pytest_cache/
+server/.coverage
+server/htmlcov/
+server/.alembic/
+
+# Node / Next.js Frontend (/client)
+client/node_modules/
+client/.next/
+client/out/
+client/build/
+client/dist/
+client/.turbo/
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+
+# Database & Local Storage
+postgres_data/
+*.sqlite3
+
+# IDEs
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
