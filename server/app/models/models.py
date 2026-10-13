@@ -28,8 +28,8 @@ class Contact(Base):
         default=lambda: datetime.now(timezone.utc), 
         onupdate=lambda: datetime.now(timezone.utc)
     )
-    email: Mapped[Optional[str]] = mapped_column(String(50))
-    linkedin_url: Mapped[Optional[str]] = mapped_column(String(100))
+    email: Mapped[Optional[str]] = mapped_column(String(100))
+    linkedin_url: Mapped[Optional[str]] = mapped_column(String(200))
 
     def __repr__(self) -> str:
         return (
