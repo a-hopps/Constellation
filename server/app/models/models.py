@@ -44,7 +44,7 @@ class Interaction(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     contact_id: Mapped[int] = mapped_column(ForeignKey("contacts.id"))
     interaction_date: Mapped[datetime] = mapped_column(
-        DateTime, default=lambda: datetime.now(timezone.utc)
+        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc)
     )
     notes: Mapped[Optional[str]] = mapped_column(Text)
     embedding: Mapped[Optional[List[float]]] = mapped_column(Vector(1536)) # Dimensions for OpenAI embeddings
